@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
+
+    //Mass-Assignable Fields
+    protected $fillable = [
+        'name',
+        'slug',
+        'image'
+    ];
+
+    // Relasi One-to-Many dengan Model Post
+    public function posts()
+    {
+        return $this->belongsToMany(Post::class);
+    }
 }
