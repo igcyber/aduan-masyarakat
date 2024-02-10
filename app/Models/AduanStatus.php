@@ -15,7 +15,6 @@ class AduanStatus extends Model
         'status',
         'daftar_desa',
         'keterangan',
-        'user_id'
     ];
 
     //Relationship One To Many

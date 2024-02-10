@@ -16,7 +16,7 @@ class Category extends Model
         'image'
     ];
 
-    // Relasi One-to-Many dengan Model Post
+    // Relasi Many-to-Many dengan Model Post
     public function posts()
     {
         return $this->belongsToMany(Post::class);

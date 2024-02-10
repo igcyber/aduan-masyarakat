@@ -22,7 +22,7 @@ class Aduan extends Model
         'user_id'
     ];
 
-    //Relationships One To One
+    //Relationships One To Many Inverse
     //Sebuah aduan dimiliki oleh satu user
     public function user()
     {
